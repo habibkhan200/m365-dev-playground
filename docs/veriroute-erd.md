@@ -12,6 +12,12 @@ user sees **Create Order**. So VeriRoute is two-sided per user: a user can **dis
 signing service / hiring party) *and* **perform** closings as a professional. The model therefore hangs orders off
 `USER_ACCOUNT` (dispatcher) with an optional `COMPANY` (end client), and keeps `PROFESSIONAL` as an optional 1:1 profile.
 
+### Files
+
+- `veriroute-erd.vsdx` – editable **Visio** diagram (grouped entity tables, glued connectors, entity comments as Shape Data)
+- `veriroute-erd.svg` – rendered Mermaid diagram
+- Regenerate the Visio file after editing the Mermaid block: `python3 tools/mermaid_erd_to_vsdx.py docs/veriroute-erd.md docs/veriroute-erd.vsdx` (needs Graphviz `dot`)
+
 ## 1. What the screens tell us
 
 ### Dashboard
